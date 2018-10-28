@@ -1,0 +1,47 @@
+body{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#title, #description, p, span{
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.header{
+  background-color: #1e8bc3;
+  padding: 10px 0 20px 0;
+}
+
+#survey-form{
+  padding: 20px 0;
+  text-align: center;
+	background-color: #666666;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 15px;
+}
+
+input, button{
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+}
+#name-label, #email-label, #number-label, #drop, #radio{
+  margin: 8px;
+  width: 25%;
+  height: 30px;
+}
+
+#dropdown{
+    width: 25%;
+
+}
+
+button{
+  width: 300px;
+  height: 30px;
+
+
+}
+

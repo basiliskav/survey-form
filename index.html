@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="header">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a Survey Form for FreeCodeCamp</p>
+  </div>
+  
+<form id="survey-form">
+  <input type="text" id="name-label" name="name" placeholder="Name*" required>
+  <input type="email" id="email-label" name="email" placeholder="Email*" required>
+  <input type="number" id="number-label" name="age" placeholder="18 > Age < 99*" min="18" max="99"><br>
+  <div id="drop">
+    <p>What is your favorite Car Brand?</p>
+    <select id="dropdown">
+      <option value="bmw">BMW</option>
+      <option value="ferrari">FERRARI</option>
+      <option value="lexus">LEXUS</option>
+      <option value="mercedes">MERCEDES</option>
+      <option value="porsche">PORSCHE</option>
+    </select>
+  </div>
+  
+  <div id="radio">
+    <p>Do you have a Driver's License?</p>
+    <input type="radio" name="license" value="yes"> YES <br>
+    <input type="radio" name="license" value="no"> NO <br>
+  </div>
+
+
+
+  <br>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+
