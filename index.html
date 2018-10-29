@@ -11,33 +11,46 @@
   </div>
   
 <form id="survey-form">
-  <input type="text" id="name-label" name="name" placeholder="Name*" required>
-  <input type="email" id="email-label" name="email" placeholder="Email*" required>
-  <input type="number" id="number-label" name="age" placeholder="18 > Age < 99*" min="18" max="99"><br>
-  <div id="drop">
-    <p>What is your favorite Car Brand?</p>
-    <select id="dropdown">
-      <option value="bmw">BMW</option>
-      <option value="ferrari">FERRARI</option>
-      <option value="lexus">LEXUS</option>
-      <option value="mercedes">MERCEDES</option>
-      <option value="porsche">PORSCHE</option>
-    </select>
-  </div>
-  
-  <div id="radio">
-    <p>Do you have a Driver's License?</p>
-    <input type="radio" name="license" value="yes"> YES <br>
-    <input type="radio" name="license" value="no"> NO <br>
+  <div>
+    <label id="name-label" for="name">Name*</label>
+    <input type="text" id="name" name="name" placeholder="Insert your Name" required>
+    <label id="email-label" for="email">Email*</label>
+    <input type="email" id="email" name="email" placeholder="Insert your Email" required>
+    <label id="number-label" for="age">Age*</label>
+    <input type="number" id="number" name="age" placeholder="Insert your Age" min="18" max="99"><br>
   </div>
 
+  <div class="grid-container">
+    <div class="grid-item-first">
+      <p>What is your favorite Car Brand?</p>
+      <select id="dropdown">
+        <option value="bmw">BMW</option>
+        <option value="ferrari">FERRARI</option>
+        <option value="lexus">LEXUS</option>
+        <option value="mercedes">MERCEDES</option>
+        <option value="porsche">PORSCHE</option>
+      </select>
+    </div>
+    
+    <div class="grid-item">
+      <p>Do you have a Driver's License?</p>
+      <label><input type="radio" class="radio-button" name="license" value="yes"> Yes </label><br>
+      <label><input type="radio" class="radio-button" name="license" value="no"> No </label><br>
+    </div>
+    <div class="grid-item">
+      <p>Create your dream Car!</p>
+      <label><input type="checkbox" class="check" name="parts" value="coupe"> Coupe </label><br>
+      <label><input type="checkbox" class="check" name="parts" value="jeep"> Jeep </label><br>
+      <label><input type="checkbox" class="check" name="parts" value="cabrio"> Cabrio </label><br>
+      <label><input type="checkbox" class="check" name="parts" value="turbo"> Turbo </label><br>
+    </div>
+  </div>
+  <textarea rows=10 cols=100 placeholder="Tell us anything that you want!!"></textarea><br>
 
-
-  <br>
-
-  <button type="submit">Submit</button>
+  <button type="submit" id="submit">Submit</button>
 </form>
 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
 
